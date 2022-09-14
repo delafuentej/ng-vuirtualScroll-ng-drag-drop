@@ -7,6 +7,8 @@ import { VirtualComponent } from './virtual/virtual.component';
 /* drag & drop */
 import { DragComponent } from './drag/drag.component';
 import { DragDropModule} from '@angular/cdk/drag-drop';
+import { CountriesComponent } from './countries/countries.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -14,12 +16,14 @@ import { DragDropModule} from '@angular/cdk/drag-drop';
   declarations: [
     AppComponent,
     VirtualComponent,
-    DragComponent
+    DragComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule,
     ScrollingModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
